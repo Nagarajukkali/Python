@@ -1,0 +1,8 @@
+# Write an interactive program that takes a string as input from the user and determines whether it is a Palindrome.
+
+string = input("Please enter string")
+
+if(string == string[:: - 1]):
+   print("{0} is a Palindrome String" .format(string))
+else:
+   print("{0} is Not a Palindrome String"  .format(string))
