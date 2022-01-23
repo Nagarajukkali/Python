@@ -1,0 +1,10 @@
+#Print a dictionary that has keys as the names in the list and their values as the number of times the name appears on the list
+mylist=["Ginger", "Willow", "Scout", "Roscoe", "Bear", "Kobe", "Baxter", "Zara", "Fiona", "Milo", "Oakley", "Dakota",
+        "Prince", "Bruno", "Panda", "Dexter", "Ziggy", "Roscoe", "Lucy", "Boomer", "Fiona", "Ella", "Emma", "Oakley"]
+
+print " Given list: ", mylist
+
+print(dict)
+for i in mylist:
+    dict= {i:mylist.count(i)}
+    print dict
