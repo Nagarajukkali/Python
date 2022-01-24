@@ -1,8 +1,14 @@
 #Write an interactive program that when given an input string by the user like "500 plus 200 equals" will output 700.
 
+#Simple format 1
+#output=eval(raw_input("Enter an Expression"))
+#print (output)
+
+
+
 print ("Input string by the user like "500 plus 200 equals" will output 700.")
-num1=input("Enter first number as 500")
-num2=input("Enter Second number as 200")
+num1=raw_input("Enter first number as 500")
+num2=raw_input("Enter Second number as 200")
 
 #Adding 2 number
 sum=int(num1)+int(num2);
@@ -13,8 +19,8 @@ print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 
 #Test Case 1
 print ("Input -> "300 minus 100 equals" Expected output -> 200")
-num1=input("Enter first number as 300")
-num2=input("Enter Second number as 100")
+num1=raw_input("Enter first number as 300")
+num2=raw_input("Enter Second number as 100")
 
 #Subtract 2 number
 Minus =int(num1)-int(num2);
@@ -25,8 +31,8 @@ print('The Subtract of {0} and {1} is {2}'.format(num1, num2, Minus))
 #Test Case 2
 
 print ("Input -> "20 times 4 equals" Expected output -> 80")
-num1=input("Enter first number as 20")
-num2=input("Enter Second number as 4")
+num1=raw_input("Enter first number as 20")
+num2=raw_input("Enter Second number as 4")
 
 #Multiply 2 number
 Mult =int(num1) * int(num2);
@@ -38,8 +44,8 @@ print('The Multiplication of {0} and {1} is {2}'.format(num1, num2, Mult))
 
 #Test Case 3
 print ("Input -> "30 divided by 6 equals" Expected output -> 5")
-num1=input("Enter first number as 30")
-num2=input("Enter Second number as 6")
+num1=raw_input("Enter first number as 30")
+num2=raw_input("Enter Second number as 6")
 
 #Division
 Div =int(num1) / int(num2);
@@ -51,8 +57,8 @@ print('The Divisionof {0} and {1} is {2}'.format(num1, num2, Div))
 #Test Case 4
 print ("advanced: Input -> "7 plus 10 divided by 2 equals" Expected output -> 12")
 
-num1=input("Enter first number as 7")
-num2=input("Enter Second number as 10")
+num1=raw_input("Enter first number as 7")
+num2=raw_input("Enter Second number as 10")
 
 #Division
 AdvDiv =int(num1) + / (int(num2)/2);
@@ -64,8 +70,8 @@ print('Expected Output', AdvDiv)
 #Test Case 5
 print ("Advanced: Input -> "5 times 4 minus 2 equals" Expected output -> 18")
 
-num1=input("Enter first number as 5")
-num2=input("Enter Second number as 2")
+num1=raw_input("Enter first number as 5")
+num2=raw_input("Enter Second number as 2")
 
 #Division
 AdvMinus =int(num1*4) - / int(num2);
