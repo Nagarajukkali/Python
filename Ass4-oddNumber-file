@@ -1,0 +1,18 @@
+#Write a program that reads this file and writes out a new file with any odd numbers found in the input file
+
+file1=open("/Users/nukka/Desktop/Nagaraj/odd_number.txt", 'r')
+file2 = open('/Users/nukka/Desktop/Nagaraj/output.txt','w+')
+
+for line in file1:
+    word=line.split()
+    for i in word:
+        #for letter in i:
+        if(i.isdigit()):
+            if int(i) % 2 != 0:
+                print ("number {0} is odd" .format(i))
+                file2.write(i + '\n')
+file2.close()
+print "Display odd numbers from the file output.txt"
+file3=open("/Users/nukka/Desktop/Nagaraj/output.txt", 'r')
+print (file3.read())
+file3.close()
