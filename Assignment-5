@@ -1,0 +1,26 @@
+import json
+
+with open("/Users/nukka/Desktop/Nagaraj/jsonfile.json") as json_file:
+# with open(json_file, 'r') as f:
+    data = json.load(json_file)
+
+while True:
+    user_t = input("Enter a topping, or type q to exit")
+    names = []
+    if user_t == '' or user_t == 'q':
+        #break out of the loop if empty or typed q
+        break
+    for item in data:
+        if item.get('type') == 'donut':
+            for topping in item.get('topping'):
+                if topping.get("type").lower() == user_t.lower():
+                    names.append(item.get('name'))
+
+    if len(names) > 0:
+        joined_str = ','.join(names)
+        final_op = '"' + joined_str + '"'
+        print(final_op)
+    else:
+        print("No matches found")
+
+json_file.close()
